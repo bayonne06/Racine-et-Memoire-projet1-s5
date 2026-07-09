@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../photos/logo.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact et Dons - Racine & Mémoire</title>
+</head>
+
+<body>
+
+    <!-- entête -->
+    <header class="entete">
+        <div class="logo">
+            <img class="logo-mark" src="../photos/logo.jpeg" alt="Logo Racines &amp; Mémoire">
+            Racines &amp; Mémoire
+        </div>
+        <nav class="main-nav">
+            <a href="../index.html">Accueil</a>
+            <a href="actions.html">Nos actions</a>
+            <a href="evenement.html">Evenements</a>
+            <a href="#contact" class="active">Contact</a>
+        </nav>
+        <button onclick="window.location.href='#don'" class="btn-don">Faire un don</button>
+    </header>
+    <!-- fin entête -->
+
+    <!-- Intro -->
+    <section class="page-intro">
+        <span class="mot-span">Contact &amp; soutien</span>
+        <h1>Une question, une envie de participer ?</h1>
+        <p>Écrivez-nous pour rejoindre un atelier, transmettre vos cannaissances, proposer un témoignage, ou soutenez directement la collecte et la
+            transmission du patrimoine culturel conglais.</p>
+    </section>
+    <!-- Fin intro -->
+
+
+    <!-- Main -->
+    <main>
+
+        <div class="contact-grid">
+
+            <!-- Formulaire de contact -->
+            <section class="card" id="contact">
+                <h2>Nous écrire</h2>
+                <p class="delai">Nous répondons sous 48h.</p>
+                <form class="contact-form">
+
+                    <div class="field">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" placeholder="Votre nom">
+                    </div>
+                    <div class="field">
+                        <label for="email">Adresse email</label>
+                        <input type="email" id="email" name="email" placeholder="votremail@gmaim.com">
+                    </div>
+                    <div class="field">
+                        <label for="sujet">Sujet</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="Ex. : Proposen un témoignage">
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Votre message..........."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                </form>
+            </section>
+            <!-- Fin formulaire -->
+
+
+
+            <!-- Bloc don -->
+
+            <section id="don" class="card don-card">
+                <h2>Faire un don</h2>
+                <p class="delai">Chaque contribution finance directement un atelier, un enregistrement ou une formation
+                </p>
+
+
+
+                <div class="impact-line">
+                    10 000 FCFA = un enregistrement de conte préservé
+                </div>
+
+
+                <form>
+                    <div class="montant-grid">
+                        <label class="montant-option">
+                            <input type="radio" name="montant" value="5000" checked>
+                            <span class="montant">5 000</span>
+                            <span class="fcfa">FCFA</span>
+                        </label>
+                        <label class="montant-option">
+                            <input type="radio" name="montant" value="10000">
+                            <span class="montant">10 000</span>
+                            <span class="fcfa">FCFA</span>
+                        </label>
+                        <label class="montant-option">
+                            <input type="radio" name="montant" value="25000">
+                            <span class="montant">25 000</span>
+                            <span class="fcfa">FCFA</span>
+                        </label>
+                    </div>
+
+                    <div class="saisi-montant">
+                        <label for="autre-montant"></label>
+                        <input type="text" id="autre-montant" pattern="[3-9]+" title="Format attendu : 500"
+                            placeholder="Saisie le montant du don à faire">
+                    </div>
+
+                    <button class="montant-btn">Faire un don</button>
+                    <p class="note-don">*Ceci est votre racine sous l'arble de la mémoire congolaise.*</p>
+                </form>
+            </section>
+
+            <!-- Bloc don -->
+        </div>
+
+    </main>
+
+    <!-- Fin main -->
+
+
+    <!-- Footer -->
+
+    <footer>
+        &copy; 2026 Racines &amp; Mémoire - Association culturelle
+        <div class="contenair-icon">
+            <div id="footer-icon-liste">
+                <a><img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt=""></a>
+                <a><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt=""></a>
+                <a><img src="https://img.icons8.com/?size=100&id=IrRDQlTuSTHb&format=png&color=000000" alt=""></a>
+                <a><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
