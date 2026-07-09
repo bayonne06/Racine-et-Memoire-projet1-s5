@@ -172,7 +172,10 @@ p{
     overflow: hidden;
 }
 
-.gallery article{
+.gallery
+.grid_music,
+.grid_tissage,
+.grid_conte{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -294,7 +297,10 @@ button{
         flex-direction: column;
     }
 
-    .gallery article{
+    .gallery
+    .grid_music,
+    .grid_tissage,
+    .grid_conte{
         width: 100%;
         min-height: 250px;
     }
@@ -344,7 +350,10 @@ button{
         font-size: 14px;
     }
 
-    .gallery article{
+    .gallery 
+    .grid_music,
+    .grid_tissage,
+    .grid_conte{
         min-height: 220px;
     }
 
