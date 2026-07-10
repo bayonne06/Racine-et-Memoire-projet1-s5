@@ -114,19 +114,6 @@ nav.main-nav a{
     transition: all 0.3s ease;
 }
 
-nav.main-nav a.active{
-    opacity: 1;
-    border-bottom: 2px solid var(--vert);
-    padding-bottom: 4px;
-}
-nav.main-nav a:hover{
-    opacity: 1;
-    border-bottom: 2px solid var(--vert);
-    padding-bottom: 4px;
-    
-    
-}
-
 
 
 .btn-don{
@@ -447,8 +434,9 @@ footer.contenair-icon{
     }
 
     nav.main-nav{
-        gap:18px;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     footer,header{
         width: 100%;

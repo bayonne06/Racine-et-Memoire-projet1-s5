@@ -143,7 +143,7 @@ p{
     grid-area: grid_conte;
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    background-image: url("../images/conteur-traditionnel.jpg");
+    background-image: url("../photos/conteur-traditionnel.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,7 +157,7 @@ p{
     grid-column: 3;
     grid-row: 1;
     color: var(--forest-green);
-    background-image: url("../images/tam-tam2.jpg");
+    background-image: url("../photos/tam-tam2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +169,7 @@ p{
     grid-column: 3;
     grid-row: 2;
     color: var(--forest-green);
-    background-image: url("../images/tissage-artisanal.jpg");
+    background-image: url("../photos/atelier-tissage.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
