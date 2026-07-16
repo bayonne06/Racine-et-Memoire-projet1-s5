@@ -10,6 +10,7 @@
     --width-logo: 24px;
     --sous-text: #9FB3A8;
     --title: 45px;
+    
 }
 
 *{
@@ -80,6 +81,9 @@ h2{
     text-decoration: none;
     color: var(--cream);
     font-size: 0.9rem;
+}
+.nav_a:hover{
+    border-bottom:1px solid #5B8A28;
 }
 
 #nav_don{

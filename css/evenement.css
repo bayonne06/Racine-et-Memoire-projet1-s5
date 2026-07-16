@@ -71,6 +71,9 @@ body {
 .nav_li{
     display: inline;
 }
+.nav_a:hover{
+    border-bottom:1px solid #5B8A28;
+}
 
 .nav_a{
     text-decoration: none;
