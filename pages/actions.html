@@ -6,8 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/action.css">
     <link rel="shortcut icon" href="../photos/Logo-site.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/dist/tabler-icons.min.css">
     <title>nos actions</title>
 </head>
 <body class="act_body">
@@ -20,21 +21,19 @@
             </div>
             <ul class="nav_ul">
                 <li class="nav_li"><a class="nav_a" href="../index.html">Acceuil</a></li>
-                <li class="nav_li"><a class="nav_a" href="../pages/actions.html">Nos actions</a></li>
+                <li class="nav_li"><a class="nav_a" href="../pages/actions.html" style="color: #5B8A28;">Nos actions</a></li>
                 <li class="nav_li"><a class="nav_a" href="../pages/evenement.html">Evenements</a></li>
                 <li class="nav_li"><a class="nav_a" href="../pages/contact.html">Contact</a></li>
             </ul>
-            <div class="nav_btn"><a id="nav_don" href=""> Faire un don</a></div>
+            <div ><a id="btn_nav" href="../pages/contact.html#don"> Faire un don</a></div>
         </nav>
     </header>
+    <section class="nos_actions">
+        <h1 class="act_titre">Ce que nous faisons, ce que nous avons déjà accompli</h1>
+        <p id="act_p">Quatre missions permanentes, portées sur le terrain depuis 2022 auprès des villages partenaires.</p>
+    </section>
     
     <main class="act_main">
-
-        <section class="nos_actions">
-            <span class="all_spans">Nos Actions</span>
-            <h1 class="all_titre">Ce que nous faisons, ce que nous avons déjà accompli</h1>
-            <p id="act_p">Quatre missions permanentes, portées sur le terrain depuis 2022 auprès des villages partenaires.</p>
-        </section>
 
         <section class="nos_mission">
             <span class="all_spans">Nos missions</span>
@@ -63,6 +62,7 @@
             </div>
         </section>
 
+
         <ul class="ls_chiffres">
             <li id="lis">
                 <h3 class="chiffr">12</h3>
@@ -86,7 +86,7 @@
             <span class="all_spans">Historique</span>
             <h2 class="all_titre">Nos réalisations jusqu'ici</h2>
             <p id="hist_p">Un aperçu chronologique des projets menés sur le terrain.</p>
-
+            <button class="btn_historique">voir tout   <i class="ti ti-arrow-right" aria-hidden="true"></i></button>
             <div class="ls_historique">
 
                 <div class="it_historique">
@@ -95,6 +95,7 @@
                         <span style="margin-left: 8px;" class="spans">MARS 2026 -- VILLAGE DE MAKABANA</span>
                         <p style="margin-left: 8px;" class="voil_titre">Atelier de tissage traditionnel</p>
                         <p style="margin-left: 8px;" class="voil_content">18 artisans formés aux techniques ancestrales de tissage sur trois jours</p>
+                        <button class="voil_buton" > Rapport d'activité<i class="ti ti-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="it_historique">
@@ -103,6 +104,7 @@
                         <span style="margin-left: 8px;" class="spans">JANVIER 2026 -- DISTRICT DE MOKEKO</span>
                         <p style="margin-left: 8px;"  class="voil_titre">Campagne de collecte de contes</p>
                         <p style="margin-left: 8px;" class="voil_content">32 récits enregistrés auprès des anciens, désormais archivés dans la bibliothèque orale.</p>
+                        <button class="voil_buton" >Rapport d'activité<i class="ti ti-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="it_historique">
@@ -111,6 +113,7 @@
                         <span style="margin-left: 8px;" class="spans">NOVEMBRE 2025 -- CEG La Fraternité</span>
                         <p style="margin-left: 8px;"  class="voil_titre">Ateliers de musique ancestrale</p>
                         <p style="margin-left: 8px;"  class="voil_content" >120 élèves initiés à la sanza et au tam-tam dans 4 établissements scolaires.</p>
+                        <button class="voil_buton" >Rapport d'activité<i class="ti ti-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="it_historique">
@@ -119,12 +122,69 @@
                         <span style="margin-left: 8px;" class="spans">SEPTEMBRE 2025 -- BRAZZAVILLE</span>
                         <p style="margin-left: 8px;" class="voil_titre">Lancement de la bibliothèque orale numérique</p>
                         <p style="margin-left: 8px;" class="voil_content">Mise en ligne des 80 premiers contes archivés, ouverts au public.</p>
+                        <button  class="voil_buton" >Rapport d'activité<i class="ti ti-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+               <div class="it_historique">
+                    <img class="img_historique" src="../photos/atelier-tissage.webp" alt="atelier de tissage traditionnel">
+                    <div class="voil">
+                        <span style="margin-left: 8px;" class="spans">MARS 2026 -- VILLAGE DE MAKABANA</span>
+                        <p style="margin-left: 8px;" class="voil_titre">Atelier de tissage traditionnel</p>
+                        <p style="margin-left: 8px;" class="voil_content">18 artisans formés aux techniques ancestrales de tissage sur trois jours</p>
+                        <button class="voil_buton" > Rapport d'activité<i class="ti ti-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+               <div class="it_historique">
+                    <img class="img_historique" src="../photos/atelier-tissage.webp" alt="atelier de tissage traditionnel">
+                    <div class="voil">
+                        <span style="margin-left: 8px;" class="spans">MARS 2026 -- VILLAGE DE MAKABANA</span>
+                        <p style="margin-left: 8px;" class="voil_titre">Atelier de tissage traditionnel</p>
+                        <p style="margin-left: 8px;" class="voil_content">18 artisans formés aux techniques ancestrales de tissage sur trois jours</p>
+                        <button class="voil_buton" > Rapport d'activité<i class="ti ti-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
-            <button class="btn_historique">voir tout l'historique</button>
         </section>
+
+        <section class='nos_temoignage'>
+
+            <span class="all_spans">Temoignages </span>
+            <h2 class="all_titre"> Notre travail produit des fruits</h2>
+            <p id="hist_p">A travers nos oeuvres, nous changeons aussi la vie des gens</p>
+            <div class="ls_temoin">
+                <div class="it_temoin">
+                    <img class="img_temoin" src="../photos/temoin-artisan.jpg" alt="">
+                    <div>
+                        <p class="voil_content"><em><strong>«</strong> Avant l'atelier, je pensais que la technique de tissage de mon grand-père allait disparaître avec ma génération. Aujourd'hui, je peux la transmettre à mon tour à mes enfants. <strong>»</strong></em></p>
+                        <span class="spans"> Jean-Baptiste M., artisan tisserand, village de Makabana</span>
+                    </div>
+                </div>
+                <div class="it_temoin">
+                    <img class="img_temoin" src="../photos/temoin-jeune.avif" alt="">
+                    <div>
+                        <p class="voil_content"><em>«« Je ne savais même pas jouer de la sanza avant l'atelier. Maintenant j'en joue avec mes amis à l'école, et on a monté un petit groupe. »</em></p>
+                        <span class="spans"> Grâce N., élève, CEG La Fraternité</span>
+                    </div>
+                </div>
+                <div class="it_temoin">
+                    <img class="img_temoin" src="../photos/temoin-conteuse.webp" alt="">
+                    <div>
+                        <p class="voil_content"><em>« Personne ne m'avait jamais demandé de raconter ces histoires avant. Savoir qu'elles seront écoutées par mes petits-enfants, même après moi, ça compte énormément. »</em></p>
+                        <span class="spans">Mama Thérèse K., conteuse, district de Mokeko</span>
+                    </div>
+                </div>
+                <div class="it_temoin">
+                    <img class="img_temoin" src="../photos/temoin-partenaire.jpg" alt="">
+                    <div>
+                        <p class="voil_content"><em>« Racines & Mémoire n'est pas venue prendre, elle est venue préserver. C'est une vraie différence, et les villageois le ressentent. »</em></p>
+                        <span class="spans">  Chef de village, Makabana</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
     <footer></footer>
 
 </body>
