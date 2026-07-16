@@ -1,0 +1,131 @@
+:root{
+    --forest-green: #14342B;
+    --lime-green: #14342B;
+    --cream: #F6F1E4;
+    --button: #8FC63E;
+    --margin-header: 20px 30px;
+    --pad-button: 10px 24px;
+    --pd-card: 24px;
+    --container-logo: 44px;
+    --width-logo: 24px;
+    --sous-text: #9FB3A8;
+    --title: 45px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--cream);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+    margin: 0;
+}
+
+
+main{
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: var(--pd-card);
+}
+
+h1{
+    font-size: var(--title);
+    font-weight: 700;
+    color: #14342B;
+}
+
+h2{
+    color: var(--button);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: var(--margin-header);
+    flex-wrap: wrap;
+    background-color: #0e2921;
+
+
+}
+
+a{
+    color: var(--sous-text);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--button);
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 20px;
+    color: white;
+}
+
+.logo img{
+    width: var(--container-logo);
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.histoire{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+    padding: var(--pd-card);
+ 
+}
+
+.carte_histoire{
+    border-top: 2px solid var(--forest-green);
+    padding: var(--pd-card);
+    background-color: var(--cream);
+    height: auto;
+    transition: 0.5s;
+    background:#f6f1e4e5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.carte_histoire img{
+    width: 350px;
+    border-radius: 15px;
+}
+
