@@ -146,20 +146,6 @@ nav ul{
 }
 
 
-   --bg:#5B8A28;
-    --panel:#1b1e27;
-    --panel-active:#242838;
-    --accent:#7c9cff;
-    --accent-soft:#3a4468;
-    --text:#e8e9ee;
-    --muted:#8b8fa3;
-    
-    
-    --zone-sud:linear-gradient(176deg, rgba(92, 255, 15, 1) 0%,rgba(92, 234, 91, 255) 0%,rgba(23, 98, 28, 255) 7%,rgba(53, 199, 131, 255) 40%,rgba(92, 194, 239, 255) 94%,rgba(92, 190, 255, 1) 100%);
-    --zone-nord:linear-gradient(184deg, rgba(92, 255, 15, 1) 0%,rgba(92, 234, 91, 255) 11%,rgba(23, 98, 28, 255) 48%,rgba(53, 199, 131, 255) 91%);
-    --zone-centre:linear-gradient(184deg, rgba(92, 234, 91, 255) 0%,rgba(228, 213, 79, 255) 32%,rgba(210, 212, 84, 255) 53%,rgba(53, 199, 131, 255) 91%);
-
-}
 
 
 
