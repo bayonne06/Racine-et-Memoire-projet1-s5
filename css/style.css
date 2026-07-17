@@ -86,7 +86,7 @@ nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
-
+}
 .nav_navbar{
     display: flex;
     justify-content: space-between;
@@ -314,8 +314,40 @@ button{
     transform: scale(1.1);
 }
 
+#histoire{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: var(--pd-card);
+    margin-top: 30px;
+    text-align: start;
+}
 
+.carte_histoire{
+    border-top: 2px solid var(--forest-green);
+    padding: var(--pd-card);
+    background-color: var(--cream);
+    height: auto;
+    transition: 0.5s;
+    background:transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: start;
+    gap: 20px;
+    overflow: hidden;
+}
 
+.carte_histoire img{
+    width: 350px;
+    border-radius: 15px;
+}
+
+#histoire h2{
+    color: var(--button);
+}
 
 @media (max-width: 1024px){
     body{
@@ -364,7 +396,7 @@ button{
     nav ul{
         flex-wrap: wrap;
         justify-content: center;
-
+    }
     .nav_navbar{
         display: flex;
         flex-direction: column;
