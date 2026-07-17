@@ -19,6 +19,7 @@
 
 /* ............................. PARTIE KETSIA COMMENCE ICI............................................ */
 
+
 .act_body{
     background-color: var(--cream);
     font-family: "Poppins", sans-serif;
@@ -58,30 +59,24 @@
     text-decoration: none;
     color: var(--cream);
     font-size: 0.9rem;
+    transition: 0.3s;
 }
 .nav_a:hover{
     border-bottom:1px solid #5B8A28;
 }
 
-#nav_don{
+#btn_nav{
     text-decoration: none;
     color: var(--foret) ;
     background-color: var(--vert);
     padding: 10px 24px;
     border-radius: 50px;
+    transition: 0.3s;
 }
-
-/*MAIN*/
-.act_main{
-    margin: 0 auto 60px;
-    padding: 0 64px;
-    max-width: 1440px;
-}
-/*SECTION nos_actions*/
-.nos_actions{
-    margin: 50px 0px;
-    height: 100px;
-    padding: auto;
+#btn_nav:hover{
+    background-color: #14342B;
+    border: solid 1px var(--vert);
+    color: var(--vert);
 }
 .all_spans{
     color: var(--vert-fonce);
@@ -90,10 +85,37 @@
 .all_titre{
     color: var(--foret);
 }
-#act_p{
-    color: var(--mute);
+/*MAIN*/
+.act_main{
+    margin: 0 auto;
+    padding: 0 64px;
+    max-width: 1440px;
+    margin: 50px 0px;
 }
+/*SECTION nos_actions*/
+.nos_actions{
+    height: 100px;
+    padding: auto;
+    background-color: var(--foret);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.act_titre{
+    color: var(--cream);
+    text-shadow: 1px 1px 15px 2px white;
+    font-size: 2.8rem;
+}
+#act_p{
+    color: var(--cream);
+}
+
 /*SECTION nos_missions*/
+.nos_actions{
+    padding: 30px 60px;
+    height: 300px;
+}
 .ls_missions{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr ;
@@ -108,11 +130,24 @@
     padding: 24px;
     border: solid 1px #14342b1d ;
     border-radius: 15px;
+    transition: 0.3s;
 }
 .icon_mission{
     background: var(--tan);
     border-radius: 5px;
 }
+.p_mission{
+    font-weight: 500;
+    margin: 3px 0px;
+    color:  var(--ink);
+}
+.small_mission{
+    color:#6B7A72;
+}
+.it_mission:hover{
+    transform: scale(1.05) translate(5px, -10px);
+}
+
 /*LISTE chiffres*/
 .ls_chiffres{
     background-color: var(--foret);
@@ -139,6 +174,7 @@
     color: #9FB3A8;
     font-size: 0.8rem;
 }
+
 /*SECTION nos_historique*/
 .nos_historique{
     margin-top: 60px;
@@ -150,58 +186,145 @@
 }
 .ls_historique{
     display: grid;
-    width: 1000px;
-    margin: 50px auto;
-    grid-template-columns: 1fr 1fr ;
+    margin: 50px 0px;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 300px 300px;
-    gap: 80px;
+    gap: 30px;
+    border: none;
+    padding: 40px;
+    background-color: var(--tan);
 }
 .it_historique{
     background-color: #ffff;
     border-radius: 15px;
-    border: solid 1px #14342b1d;
+    border: none;
     position: relative;
+    transition: 0.3s;
 }
 .img_historique{
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    transition: 0.5s;
+
 }
 .voil{
     position: absolute;
-    background-color: #14342b88;
+    background-image: linear-gradient(to top,#1C1C1A,#1c1c1acb, #1c1c1a0e);
     bottom: 0px;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 10px 10px;
     width: 100%;
-    padding: 20px 0px;
+    padding: 6px 0px;
+    margin: none;
 }
 .spans{
     color: var(--vert);
+    font-size: 0.5rem;
+    font-weight: bold;
 }
 .voil_titre{
     font-weight: bolder;
     color: #F6F1E4;
+    font-size: 0.95rem;
 }
 .voil_content{
-    color: #9FB3A8;
+    color: var(--mute-2);
+    font-size: 0.78rem;
+}
+.voil_buton{
+    display: inline-flex;
+    align-items: center;
+    border: none ;
+    padding: 06px;
+    margin-top: 5px;
+    border-radius: 50px;
+    background-color: #6b7a724d;
+    color: var(--mute-2);
+    font-weight: bold;
+    font-size: 0.7rem;
+    gap: 0px;
+    backdrop-filter: blur(8px);
+    margin-left: 8px;
+    transition: gap 0.5s ease;
+    transition: 0.5s;
+}
+
+.voil_buton:hover{
+    gap: 12px;;
+    background-color: var(--vert-fonce);
+    color: var(--cream);
+    font-weight: bold;
+
 }
 .btn_historique{
-    width: 200px;
+    display: inline-flex;
+    align-items: center;
+    width: 120px;
     padding:10px 24px;
     border-radius: 50px;
     border: none;
     background-color:var(--vert);
     color: var(--foret);
-    font-weight: bold;
+    gap: 0px;
     font-family: "Poppins", sans-serif;
+    transition: gap 0.5s ease;
+    transition: 0.5s;
+    margin-top: 30px;
+}
 
+
+.it_historique:hover{
+    transform: scale(1.05);
 }
-.img_historique:hover{
-    transform: scale(0.99);
+
+.btn_historique:hover{
+    gap: 12px;
+    width: 160px;
+    color: var(--cream);
 }
-/*FOOTER*/
+
+/* SECTION TEMOIGNAGE*/
+.nos_temoignage{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.ls_temoin{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+    height: 300px;
+    margin: 60px 0px;
+    width: auto;
+    overflow-x: scroll;
+}
+.it_temoin{
+    display: flex;
+    flex-direction: row;
+    height: 260px;
+    background-color: white;
+    width: 300px;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    border: solid 1px #14342b1d;
+    transition: 0.5s;
+}
+.it_temoin div{
+    margin: 12px;
+}
+.img_temoin{
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+}
+.it_temoin:hover{
+    background-color: var(--ink);
+}
+
+/* -------Footer------------- */
+
 footer{
     background: var(--foret);
     color: var(--mute-2);
@@ -226,6 +349,7 @@ footer.contenair-icon{
 
 
 }
+
 @media screen and (max-width: 1066px){ 
     .nav_ul{
 
@@ -260,7 +384,10 @@ footer.contenair-icon{
         grid-template-columns: 1fr ;
         grid-template-rows: 300px 300px;
     }
+    .ls_temoin{
+        width: auto ;
     }
+}
 
 @media screen and (max-width: 768px){ 
 
@@ -279,9 +406,8 @@ footer.contenair-icon{
     margin-left: 0px;
     }
     .nos_actions{
-        margin: 50px 0px;
-        height: 350px;
-        padding: 0px;
+        height: 400x;
+        padding: 0px 30px;
     }
     .ls_missions{
         display: grid;
@@ -311,6 +437,9 @@ footer.contenair-icon{
         grid-template-columns: 1fr ;
         grid-template-rows: 300px 300px 300px 300px;
         gap: 80px;
+    }
+    .ls_temoin{
+        width: auto ;
     }
  }
 
@@ -331,8 +460,7 @@ footer.contenair-icon{
     margin-left: 0px;
     }
     .nos_actions{
-        margin: 50px 0px;
-        height: 350px;
+        height: 400x;
         padding: 0px;
     }
     .ls_missions{
@@ -364,5 +492,9 @@ footer.contenair-icon{
         grid-template-rows: 300px 300px 300px 300px;
         gap: 80px;
     }
+    .ls_temoin{
+        width: auto ;
+    }
+
  }
 /* ............................. PARTIE KETSIA FINI ICI............................................ */
