@@ -65,7 +65,7 @@
     border-bottom:1px solid #5B8A28;
 }
 
-#btn_nav{
+#nav_btn{
     text-decoration: none;
     color: var(--foret) ;
     background-color: var(--vert);
@@ -79,7 +79,7 @@
     padding: 0 64px;
     max-width: 1440px;
 }
-#btn_nav:hover{
+#nav_btn:hover{
     background-color: #14342B;
     border: solid 1px var(--vert);
     color: var(--vert);
