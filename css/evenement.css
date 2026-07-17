@@ -240,30 +240,127 @@ footer.contenair-icon{
 }
 
 
-/* tablette 768px: 2 colonnes */
-@media (max-width: 1024px) {
+/* ===============================
+   Responsive
+================================== */
+
+/* Desktop réduit / petit écran large : 1280px -> 3 colonnes */
+@media screen and (max-width: 1280px) {
+
+  :root {
+    --rm-section-side-padding: 40px;
+  }
+
   .event-grid {
-  grid-template-columns: repeat(2, 1fr);}
-}
-
-
-/* mobile 375px: 1 colonne padding reduit */
-
-@media (max-width: 480px) {
-  .event-section{
-    padding: 64px 24px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.event-grid {  
-grid-template-columns: 1fr;
+/* Tablette 768px : 2 colonnes */
+@media screen and (max-width: 768px) {
+
+  :root {
+    --rm-section-side-padding: 24px;
+  }
+
+  .nav_navbar{
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav_ul{
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  .event-section{
+    padding: 64px var(--rm-section-side-padding);
+  }
+
+  .event-section-intro{
+    margin-bottom: 40px;
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .event-carte {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .event-section-titre {
+    font-size: 26px;
+  }
 }
 
+/* Mobile 375px : 1 colonne */
+@media screen and (max-width: 375px) {
 
-.event-carte {
-  min-height: auto;
-}
+  :root {
+    --rm-section-side-padding: 16px;
+  }
 
-.event-section-titre {
-  font-size: 26px;
+  .nav_navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+    gap: 10px;
+  }
+
+  .nav_titre{
+    font-size: 1.05rem;
+  }
+
+  .nav_ul{
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .nav_li{
+    display: block;
+  }
+
+  #nav_don{
+    padding: 8px 18px;
+  }
+
+  .event-section{
+    padding: 48px var(--rm-section-side-padding);
+  }
+
+  .event-section-titre{
+    font-size: 22px;
+  }
+
+  .event-section-soustitre{
+    font-size: 14px;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .event-carte{
+    padding: 18px;
+  }
+
+  .event-carte-img{
+    margin-bottom: 20px;
+  }
+
+  .event-carte-badge{
+    position: static;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 }
